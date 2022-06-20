@@ -11,5 +11,8 @@ permissions:
   pull-requests: write
 
 jobs:
-  compliance:
+  my_workflow:
     uses: https://github.com/ya-kimura/workflow-call/ci.node_unit_test.yml@main
+    secrets:
+        token: ${{ secrets.GITHUB_TOKEN }}
+
