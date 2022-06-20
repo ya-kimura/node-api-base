@@ -1,18 +1,8 @@
 name: "node unit tests"
 
-on:
-  pull_request_target:
-    types:
-      - opened
-      - edited
-      - synchronize
-
-permissions:
-  pull-requests: write
-
+on: [pull_request, workflow_dispatch]
 jobs:
-  my_workflow:
-    uses: https://github.com/ya-kimura/workflow-call/ci.node_unit_test.yml@main
+  unit_tests:
+    uses: https://github.com/ya-kimura/workflow-call/.github/workflows/ci.node_unit_test.yml@main
     secrets:
         token: ${{ secrets.GITHUB_TOKEN }}
-
