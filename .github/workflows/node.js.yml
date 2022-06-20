@@ -4,5 +4,4 @@ on: [pull_request, workflow_dispatch]
 jobs:
   unit_tests:
     uses: ya-kimura/workflow-call/.github/workflows/ci.nodejs_unit_test.yml@main
-    secrets:
-        token: ${{ secrets.GITHUB_TOKEN }}
+
