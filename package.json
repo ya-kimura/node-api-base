@@ -4,7 +4,7 @@
   "description": "Simple Nodejs API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node app.js"
   },
   "repository": {
@@ -19,5 +19,8 @@
   "homepage": "https://github.com/ya-kimura/node-api-base#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^28.1.1"
   }
 }
