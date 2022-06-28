@@ -5,3 +5,9 @@ jobs:
     uses: ya-kimura/workflow-call/.github/workflows/ci.nodejs_unit_test.yml@main
     with:
       runnerLabel: "ubuntu-20.04"
+
+  commitlint:
+    uses: ya-kimura/workflow-call/.github/workflows/ci.lint.yml@master
+    with:
+      runnerLabel: "ubuntu-20.04"
+ 
