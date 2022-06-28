@@ -1,23 +1,26 @@
 {
-  "name": "pagar-me",
+  "name": "node-api-base",
   "version": "1.0.0",
   "description": "Simple Nodejs API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ya-kimura/pagar-me.git"
+    "url": "git+https://github.com/ya-kimura/node-api-base.git"
   },
   "author": "ya-kimura",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ya-kimura/pagar-me/issues"
+    "url": "https://github.com/ya-kimura/node-api-base/issues"
   },
-  "homepage": "https://github.com/ya-kimura/pagar-me#readme",
+  "homepage": "https://github.com/ya-kimura/node-api-base#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^28.1.1"
   }
 }
