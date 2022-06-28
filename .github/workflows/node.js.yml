@@ -1,7 +1,14 @@
-name: "node unit tests"
-
+name: CI Workflow
 on: [pull_request, workflow_dispatch]
 jobs:
   unit_tests:
-    uses: ya-kimura/workflow-call/.github/workflows/ci.nodejs_unit_test.yml@main
+    uses: /ya-kimura/workflow-call/.github/workflows/module.nodejs_unit_tests.yml@master
+    with:
+      runnerLabel: "ubuntu-20.04"
+
+  commitlint:
+    uses: /ya-kimura/workflow-call/.github/workflows/module.lint.yml@master
+    with:
+      runnerLabel: "ubuntu-20.04"
+ 
 
