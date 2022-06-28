@@ -7,7 +7,7 @@ jobs:
       runnerLabel: "ubuntu-20.04"
 
   commitlint:
-    uses: ya-kimura/workflow-call/.github/workflows/ci.lint.yml@master
+    uses: ya-kimura/workflow-call/.github/workflows/ci.lint.yml@main
     with:
       runnerLabel: "ubuntu-20.04"
  
